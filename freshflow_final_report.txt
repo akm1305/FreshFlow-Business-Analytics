@@ -1,0 +1,157 @@
+FRESHFLOW JUICE COMPANY
+FINAL BUSINESS ANALYTICS REPORT
+=================================================================
+
+1. DATASET OVERVIEW
+---------------------------------------------
+Total cleaned sales transactions: 4975
+Total units sold: 22430
+Daily operations records: 720
+Sales analysis period: 30 days
+Number of outlets: 3
+Number of products: 8
+
+2. DATA QUALITY AND CLEANING
+---------------------------------------------
+Original sales records: 5,000
+Cleaned sales records: 4975
+Duplicate transaction IDs removed: 5
+Invalid sales records removed: 20
+Product/category mismatches corrected: 4
+Missing customer ratings: 23
+Operations records: 720
+Inventory formula errors after cleaning: 0
+
+3. OVERALL BUSINESS PERFORMANCE
+---------------------------------------------
+Total gross sales: Rs. 2411323.29
+Total discount amount: Rs. 253763.16
+Total net revenue: Rs. 2157560.13
+Total cost of goods sold: Rs. 1061318.43
+Total gross profit: Rs. 1096241.70
+Overall gross margin: 50.81%
+Average revenue per transaction: Rs. 433.68
+
+4. STATISTICAL SUMMARY
+---------------------------------------------
+Average quantity per transaction: 4.51
+Median quantity: 5.00
+Minimum quantity: 1
+Maximum quantity: 8
+Average selling price: Rs. 107.23
+Average unit cost: Rs. 47.15
+Average customer rating: 3.84/5
+
+5. OUTLET PERFORMANCE
+---------------------------------------------
+Outlet 1: Transactions=1864, Units=8303, Revenue=Rs. 794216.28, Profit=Rs. 404541.01
+Outlet 2: Transactions=1707, Units=7724, Revenue=Rs. 764712.63, Profit=Rs. 388238.69
+Outlet 3: Transactions=1404, Units=6403, Revenue=Rs. 598631.23, Profit=Rs. 303462.01
+Best performing outlet: Outlet 1
+
+6. PRODUCT AND CATEGORY PERFORMANCE
+---------------------------------------------
+Orange Juice: Units=3824, Revenue=Rs. 306673.33, Profit=Rs. 161709.10
+Mango Juice: Units=3505, Revenue=Rs. 379489.18, Profit=Rs. 193385.00
+Apple Juice: Units=2707, Revenue=Rs. 268496.66, Profit=Rs. 139784.34
+Watermelon Juice: Units=2733, Revenue=Rs. 208701.70, Profit=Rs. 115922.36
+Banana Smoothie: Units=2631, Revenue=Rs. 357463.14, Profit=Rs. 167044.96
+Mixed Fruit Smoothie: Units=2355, Revenue=Rs. 379689.15, Profit=Rs. 165941.15
+Lemonade: Units=2746, Revenue=Rs. 136545.71, Profit=Rs. 83250.24
+Iced Tea: Units=1929, Revenue=Rs. 120501.27, Profit=Rs. 69204.56
+Highest revenue product: Mixed Fruit Smoothie
+Lowest revenue product: Iced Tea
+
+Category-wise revenue:
+Juices: Revenue=Rs. 1163360.87, Profit=Rs. 610800.80
+Smoothies: Revenue=Rs. 737152.29, Profit=Rs. 332986.11
+Lemonade: Revenue=Rs. 136545.71, Profit=Rs. 83250.24
+Iced Tea: Revenue=Rs. 120501.27, Profit=Rs. 69204.56
+
+7. DAILY TREND ANALYSIS
+---------------------------------------------
+Average daily revenue: Rs. 71918.67
+Highest revenue day: Day 4 (Rs. 85045.66)
+Lowest revenue day: Day 3 (Rs. 55241.78)
+First 15 days average revenue: Rs. 73706.18
+Last 15 days average revenue: Rs. 70131.16
+Overall daily revenue trend: Decreasing
+
+Daily revenue changes:
+Day 2: Change=Rs. -19601.64, Percentage change=-23.37%
+Day 3: Change=Rs. -9023.00, Percentage change=-14.04%
+Day 4: Change=Rs. 29803.87, Percentage change=53.95%
+Day 5: Change=Rs. -13411.64, Percentage change=-15.77%
+Day 6: Change=Rs. 13206.49, Percentage change=18.44%
+Day 7: Change=Rs. -2251.14, Percentage change=-2.65%
+Day 8: Change=Rs. -14434.67, Percentage change=-17.48%
+Day 9: Change=Rs. 9155.76, Percentage change=13.43%
+Day 10: Change=Rs. -6952.22, Percentage change=-8.99%
+Day 11: Change=Rs. 10871.44, Percentage change=15.45%
+Day 12: Change=Rs. -17282.02, Percentage change=-21.28%
+Day 13: Change=Rs. 11290.17, Percentage change=17.66%
+Day 14: Change=Rs. -4910.21, Percentage change=-6.53%
+Day 15: Change=Rs. 1216.26, Percentage change=1.73%
+Day 16: Change=Rs. 3374.15, Percentage change=4.72%
+Day 17: Change=Rs. 6060.51, Percentage change=8.09%
+Day 18: Change=Rs. -5649.96, Percentage change=-6.98%
+Day 19: Change=Rs. -13832.01, Percentage change=-18.36%
+Day 20: Change=Rs. 10587.07, Percentage change=17.22%
+Day 21: Change=Rs. 2242.46, Percentage change=3.11%
+Day 22: Change=Rs. -4515.19, Percentage change=-6.07%
+Day 23: Change=Rs. -7680.37, Percentage change=-11.00%
+Day 24: Change=Rs. 8076.08, Percentage change=13.00%
+Day 25: Change=Rs. 3150.12, Percentage change=4.49%
+Day 26: Change=Rs. -7193.27, Percentage change=-9.81%
+Day 27: Change=Rs. -5024.65, Percentage change=-7.59%
+Day 28: Change=Rs. 1459.69, Percentage change=2.39%
+Day 29: Change=Rs. 6465.86, Percentage change=10.33%
+Day 30: Change=Rs. 9301.44, Percentage change=13.47%
+
+8. DISCOUNT ANALYSIS
+---------------------------------------------
+0% to below 10%: Transactions=1764, Units=8022, Revenue=Rs. 844723.55, Profit=Rs. 462089.22, Gross Margin=54.70%
+10% to below 20%: Transactions=2263, Units=10125, Revenue=Rs. 955150.71, Profit=Rs. 476173.61, Gross Margin=49.85%
+20% to below 30%: Transactions=943, Units=4255, Revenue=Rs. 356541.20, Profit=Rs. 157883.22, Gross Margin=44.28%
+30% to 100%: Transactions=5, Units=28, Revenue=Rs. 1144.68, Profit=Rs. 95.66, Gross Margin=8.36%
+
+9. ANOMALY AND EXCEPTION ANALYSIS
+---------------------------------------------
+Loss-making transactions: 2
+Transactions with discount above 20%: 245
+Missing customer ratings: 23
+High unit-price transactions (above Rs. 180): 56
+Total anomaly records across these categories: 326
+Note: A transaction may appear in more than one anomaly category.
+
+10. BUSINESS SCENARIO ANALYSIS
+---------------------------------------------
+Original Business: Revenue=Rs. 2157560.13, Profit=Rs. 1096241.70
+Sales Volume Increase by 10%: Revenue=Rs. 2373316.15, Profit=Rs. 1205865.87
+Operating Cost Increase by 5%: Revenue=Rs. 2157560.13, Profit=Rs. 1043175.78
+Discount Increase by 5 Percentage Points: Revenue=Rs. 2036993.97, Profit=Rs. 975675.54
+Discount Increase by 10 Percentage Points: Revenue=Rs. 1916427.81, Profit=Rs. 855109.38
+
+11. BUSINESS RECOMMENDATIONS
+---------------------------------------------
+1. Review high-discount strategies because gross margin declines as discount levels increase.
+2. Introduce approval limits for discounts above 20% and evaluate whether promotions generate additional sales.
+3. Investigate Outlet 3's lower revenue compared with the other outlets and review its product mix and sales practices.
+4. Maintain adequate stock of high-revenue products such as Mixed Fruit Smoothie and Mango Juice.
+5. Review Iced Tea's sales performance before making inventory, pricing or promotional decisions.
+6. Monitor daily revenue changes to identify declining performance early.
+7. Continue monitoring operating costs to protect overall business profitability.
+
+12. LIMITATIONS AND CONCLUSION
+---------------------------------------------
+LIMITATIONS:
+1. The analysis covers only 30 days of sales data.
+2. Scenario analysis uses assumptions and does not guarantee future business results.
+3. Discount scenarios assume sales quantities remain unchanged.
+4. Associations in the data do not necessarily prove cause-and-effect relationships.
+
+CONCLUSION:
+The FreshFlow Juice Company dataset was analysed using NumPy. The project covered data auditing, cleaning, metric calculation, statistical analysis, outlet and product performance, daily trends, discount investigation, anomaly detection and business scenarios. The findings and recommendations can support better decisions about pricing, inventory, costs and sales performance.
+
+=================================================================
+END OF FRESHFLOW BUSINESS ANALYTICS REPORT

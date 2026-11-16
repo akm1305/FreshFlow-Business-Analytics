@@ -1,0 +1,128 @@
+
+FRESHFLOW JUICE COMPANY
+DATA GENERATION AND DATASET LOG
+===============================================
+
+1. DATASET SOURCE
+
+The project uses two datasets:
+
+A. freshflow_sales.csv
+- Source: Sales CSV file supplied for the assignment.
+- Records: 5,000
+- Columns: 12
+- Contains transaction-level sales information.
+- Includes transaction ID, day, outlet, product, quantity,
+  price, cost, discount, stock and customer rating.
+
+B. freshflow_daily_operations.csv
+- Generated using Python and NumPy.
+- Records: 720
+- Columns: 8
+- Covers 30 days, 3 outlets and 8 products.
+- Contains daily inventory and sales operations.
+
+2. OPERATIONS DATA GENERATION METHOD
+
+The operations dataset was generated using NumPy.
+
+The program:
+- Loaded the supplied sales dataset.
+- Removed duplicate transaction IDs for aggregation.
+- Excluded invalid or incomplete day, outlet, product
+  and quantity records from aggregation.
+- Aggregated valid sales quantities by day, outlet
+  and product.
+- Generated records for all 30 days, 3 outlets
+  and 8 products.
+
+Random seed:
+42
+
+Random stock values:
+- Opening stock: 35 to 60 units.
+- Stock received: 0 to 20 units.
+- Waste units: 0 to 3 units.
+
+Stock received was adjusted when necessary to
+avoid insufficient stock.
+
+The closing stock formula is:
+
+Closing Stock = Opening Stock + Stock Received
+                - Units Sold - Waste Units
+
+Total expected operations records:
+
+30 x 3 x 8 = 720
+
+3. DELIBERATE DATA-QUALITY ISSUES IN SALES DATA
+
+The supplied sales dataset contains deliberate
+data-quality defects for cleaning and validation.
+
+Documented defects and target counts:
+
+- Missing unit prices: 4
+- Missing unit costs: 4
+- Missing customer ratings: 20
+- Duplicate transaction ID records: 5
+- Zero or negative quantities: 4
+- Negative unit prices: 2
+- Negative unit costs: 2
+- Discount rates greater than 1: 2
+- Invalid customer ratings: 3
+- Product-category mismatches: 4
+- Unknown outlet IDs: 2
+- Unusually high but valid unit prices: 5
+- Unusually high valid discounts: 5
+- Zero stock before sale: 5
+
+These issues were included to demonstrate
+data auditing, cleaning, validation and anomaly
+detection.
+
+4. CLEANING AND VALIDATION
+
+The sales dataset was cleaned using NumPy.
+
+The cleaning process included:
+- Removing duplicate transaction IDs.
+- Removing records with invalid required values.
+- Correcting product-category mismatches.
+- Converting invalid customer ratings into missing values.
+- Retaining missing optional customer ratings.
+
+The cleaned datasets were saved as:
+
+freshflow_sales_cleaned.csv
+freshflow_operations_cleaned.csv
+
+Final cleaned dimensions:
+
+Sales records: 4,975
+Operations records: 720
+
+5. REPRODUCIBILITY AND TECHNICAL NOTES
+
+- Python was used for data processing.
+- NumPy was used for numerical operations,
+  data generation and validation.
+- The operations generation script uses
+  np.random.default_rng(42).
+- The sales CSV was supplied as an input dataset;
+  its original generation seed is not documented.
+- The stock calculation was validated.
+- Duplicate IDs and invalid records were checked.
+- The final cleaned datasets were used for
+  business analysis.
+
+6. OUTPUT FILES
+
+- freshflow_sales.csv
+- freshflow_daily_operations.csv
+- freshflow_sales_cleaned.csv
+- freshflow_operations_cleaned.csv
+- freshflow_metrics.csv
+
+END OF DATA GENERATION LOG
